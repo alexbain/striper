@@ -12,7 +12,7 @@
 <span class='payment-errors required'></span>
 <p class="form-row striper-card-number">
   <label><?php _e('Card Number','striper'); ?> <span class="required">*</span></label>
-  <input class="input-text" type="text" size="19" maxlength="19" data-stripe="number" style="border-radius:6px;width:400px;"/>
+  <input class="input-text" type="text" size="19" maxlength="19" data-stripe="number" />
 </p>
 <div class="clear"></div>
 <p class="form-row striper-expiration-date">
