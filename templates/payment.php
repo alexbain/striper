@@ -15,8 +15,8 @@
   <input class="input-text" type="text" size="19" maxlength="19" data-stripe="number" style="border-radius:6px;width:400px;"/>
 </p>
 <div class="clear"></div>
-<p class="form-row form-row-first striper-expiration-month">
-  <label><?php _e('Expiration Month','striper'); ?> <span class="required">*</span></label>
+<p class="form-row striper-expiration-date">
+  <label><?php _e('Expiration Date','striper'); ?> <span class="required">*</span></label>
   <select data-stripe="exp-month">
       <option value=1>01</option>
       <option value=2>02</option>
@@ -31,21 +31,19 @@
       <option value=11>11</option>
       <option value=12>12</option>
   </select>
-</p>
-<p class="form-row form-row-last striper-expiration-year">
-  <label><?php _e('Expiration Year','striper'); ?> <span class="required">*</span></label>
+  <span style="display: inline-block; width: 10px; height: 10px;"></span>
   <select data-stripe="exp-year">
 <?php
     $today = (int)date('Y', time());
     for($i = 0; $i < 10; $i++)
     {
 ?>
-        <option value="<?php echo $today; ?>"><?php echo $today; ?></option>
+       <option value="<?php echo $today; ?>"><?php echo $today; ?></option>
 <?php
         $today++;
     }
 ?>
-    </select>
+  </select>
 </p>
 <div class="clear"></div>
 <p class="form-row form-row-first striper-verification-number">
