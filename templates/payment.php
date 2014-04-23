@@ -31,7 +31,6 @@
       <option value=11>11</option>
       <option value=12>12</option>
   </select>
-  <span style="display: inline-block; width: 10px; height: 10px;"></span>
   <select data-stripe="exp-year">
 <?php
     $today = (int)date('Y', time());
